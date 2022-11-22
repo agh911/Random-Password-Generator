@@ -14,7 +14,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #16161a;
 }
 
 .wrapper {
@@ -27,15 +27,15 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: #fffffe;
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: #232629;
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: #fffffe;
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
@@ -74,11 +74,10 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
+  background-color: #2cb67d;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+  color: #fffffe;
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -86,6 +85,10 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #299e6e;
 }
 
 button[disabled] {
@@ -100,6 +103,8 @@ button[disabled] {
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
+  background: #232629;
+  color: #94a1b2;
   appearance: none;
   border: none;
   display: block;
@@ -112,7 +117,7 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 2px solid #c0c7cf;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
