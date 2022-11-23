@@ -99,9 +99,9 @@ var specialChar;
 function getPasswordOptions() {
   passwordLength = prompt('How many characters would you like your password to be?');
   while (passwordLength < 10 || passwordLength > 64 || passwordLength === '' || isNaN(passwordLength)) {
-      confirm('Password must be at least 10 characters and no more than 64. Please try again.');
-      passwordLength = prompt('Enter a valid number.\nHow many characters would you like your password to be?');
-  } 
+    confirm('Password must be at least 10 characters and no more than 64. Please try again.');
+    passwordLength = prompt('Enter a valid number.\nHow many characters would you like your password to be?');
+  }
   if (passwordLength > 10 || passwordLength < 64 || passwordLength !== '' || !isNaN(passwordLength)) {
     // Prompts for getting and storing user options
     upperCase = confirm('Would you like your password to contain upper case letters?');
@@ -109,8 +109,12 @@ function getPasswordOptions() {
     numbers = confirm('Would you like your password to contain numbers?');
     specialChar = confirm('Would you like your password to contain symbols?');
     // Created "if" statement to ensure one option is selected for potential password.
-    if (!upperCase && !lowerCase && !numbers && !specialChar) {
+    while (!upperCase && !lowerCase && !numbers && !specialChar) {
       alert('At least one character set must be chosen. Please try again.');
+      upperCase = confirm('Would you like your password to contain upper case letters?');
+      lowerCase = confirm('Would you like your password to contain lower case letters?');
+      numbers = confirm('Would you like your password to contain numbers?');
+      specialChar = confirm('Would you like your password to contain symbols?');
     }
   }
   return passwordLength;
