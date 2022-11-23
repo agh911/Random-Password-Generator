@@ -108,7 +108,7 @@ function getPasswordOptions() {
     lowerCase = confirm('Would you like your password to contain lower case letters?');
     numbers = confirm('Would you like your password to contain numbers?');
     specialChar = confirm('Would you like your password to contain symbols?');
-    // Created "if" statement to ensure one option is selected for potential password.
+    // Created "while" statement to ensure one option is selected for potential password.
     while (!upperCase && !lowerCase && !numbers && !specialChar) {
       alert('At least one character set must be chosen. Please try again.');
       upperCase = confirm('Would you like your password to contain upper case letters?');
